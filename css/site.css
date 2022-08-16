@@ -1,0 +1,116 @@
+.navbar-brand
+	{
+		font-family: 'arial';
+		font-size: 28px;
+		font-weight: bold;
+             color: #0a7e8c ;
+		
+	}
+.dropdown:hover>.dropdown-menu
+	{
+		display: block;
+	}
+
+.carousel-indicators li 
+   {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(2,0,36,1) 0%, 
+                  rgba(255,255,255,1) 3%,rgba(0,212,255,1) 100%);
+    }
+ 
+.carousel-indicators .active 
+    {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        background-color: #ffff99;
+  }
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: linear-gradient(white,royalblue);
+    text-decoration: none;
+    color: #555;
+}
+
+
+.box
+{
+text-align:center;
+border:1px solid gray; 
+ border-radius:10px ;
+margin:10px;
+font-family:calibry;
+background:linear-gradient(to top,#f7f7f7,white);
+font-size:20px;
+text-align:justify;
+box-shadow:2px 2px 2px gray;
+padding:15px;
+}
+
+.box:hover
+{
+box-shadow:4px 3px 3px black;
+background-image:linear-gradient(to top,white,#f7f7f7);
+}
+
+footer
+   {
+      background: linear-gradient(#1a9ebc,#340d73);
+      color: white;
+      padding: 40px;
+   
+   }
+
+  footer a
+   {
+       text-decoration: none;
+       color: white;
+    }
+
+   footer a:hover
+    {
+       text-decoration: none;
+       color: white;
+       font-weight: bold;
+   }
+
+  footer#socialicons
+   {   
+       list-style: none;
+       padding: 0px;
+       margin: 0px;    
+    }
+
+   footer #socialicons li
+    {
+        display: inline-block;    
+    }
+
+    footer #socialicons li a
+      {
+           display: block;
+           margin-right: 20px;
+       }
+
+
+
+
