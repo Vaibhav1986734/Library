@@ -201,7 +201,7 @@ if($_SERVER['REQUEST_METHOD']=="GET")
     ?>
 
               <div class="col-md-12  text-dark text-center">
-                <b><h4  style="font-weight: 700; ">Babu Sunder Singh Institute of Technology and Managment </h4></b>
+                <b><h4  style="font-weight: 700; ">Government Polytechnic Lucknow </h4></b>
              </div>
             <h5 class="text-dark text-center" style="font-weight: 600;">Library- Card </h5>
                <p class="text-center">Session:-2022-23</p>
@@ -232,11 +232,11 @@ if($_SERVER['REQUEST_METHOD']=="GET")
 </main>
          </div>
          </div>
-          
-          <?php
-                  mysqli_close($con); 
-                include_once("shared/adminpagebottom.php") 
-                ?>
+         
+     <?php  include_once("shared/adminpagebottom.php") ?>
+         <?php
+            mysqli_close($con); 
+          ?>
 
       </body>
       </html>

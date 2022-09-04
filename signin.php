@@ -39,7 +39,9 @@
      if($role=='Administrator')
         header("Location: Administration");      
      else if($role=='Faculty')
-        header("Location:FacultyHome");      
+        header("Location:FacultyHome");
+        else if($role=='H.O.D.')
+        header("Location:hodHome");      
      else
         header("Location: home");      
 

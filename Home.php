@@ -23,8 +23,8 @@
 
 <!---------------------- Open  the code of banner ----------------------------------------->
 
-<div class="container-fluid animate__animated animate__animated">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row ">
     <div class="col-md-9 p-0">
        <!-- Start the Code of  Carousel-->
 
@@ -503,45 +503,46 @@
       
        <!-- Start the Code of  slideshow -->
               
-      <div class="carousel-inner ">
+       <div class="carousel-inner ">
 
-      <div class="carousel-item active ">
-      <div class="card bg-light ">
-                           <div class="card-body text-white m-5 " style="text-align:center; border-radius:15px; background: linear-gradient(#0a7e90,#0a7e8c);"> 
-                                  <img src="./images/feedback/1.jpeg"alt="pic-1" width="100" class="img-fluid  rounded-circle mb-3 img-thumbnail shadow-sm">
+<div class="carousel-item active ">
+<div class="card  " style=" background-image:url(./images/image1.webp);  background-size:100% 100%;">
+                     <div class="card-body text-white m-5 " style="text-align:center; border-radius:15px; "> 
+                            <img src="./images/feedback/1.jpeg"alt="pic-1" width="100" class="img-fluid  rounded-circle mb-3 img-thumbnail shadow-sm">
+                       <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                                        live the blind texts. "</p>
+                              <h5>Er. Anand Shekhar Singh</h5>
+                               </div>
+                 </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card " style=" background-image:url(./images/image1.webp);  background-size:100% 100%;">
+                     <div class="card-body text-white m-5 " style="text-align:center; border-radius:15px; "> 
+                           <img src="./images/feedback/2.jpeg" alt="pic-1" width="100" class="img-fluid  rounded-circle mb-3 img-thumbnail shadow-sm" >
                              <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                                              live the blind texts. "</p>
-                                    <h5>Er. Anand Shekhar Singh</h5>
-			                    	 </div>
-                       </div>
-              </div>
+                                        live the blind texts. "</p>
+                              <h5> Mr. Sandeep Kumar Singh</h5>
+                               </div>
+                 </div>
+         </div> 
 
-              <div class="carousel-item">
-                <div class="card bg-light">
-                           <div class="card-body text-white m-5 " style="text-align:center; border-radius:15px; background: linear-gradient(#0a7e90,#0a7e8c);"> 
-                                 <img src="./images/feedback/2.jpeg" alt="pic-1" width="100" class="img-fluid  rounded-circle mb-3 img-thumbnail shadow-sm" >
-                                   <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                                              live the blind texts. "</p>
-                                    <h5> Mr. Sandeep Kumar Singh</h5>
-			                    	 </div>
-                       </div>
-               </div> 
+         
 
-               
+        <div class="carousel-item">
+        <div class="card " style=" background-image:url(./images/image1.webp);  background-size:100% 100%;">
+                       <div class="card-body text-white m-5 " style="text-align:center; border-radius:15px; "> 
+                          <img src="./images/feedback/3.jpeg" alt="pic-1" width="100" class="img-fluid  rounded-circle mb-3 img-thumbnail shadow-sm">
+                                 
+                                 <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                                        live the blind texts. "</p>
+                              <h5>Vaibhav Mishra </h5>
+                               </div>
+                 </div>
+        </div>
 
-              <div class="carousel-item">
-              <div class="card bg-light">
-                             <div class="card-body text-white m-5 " style="text-align:center; border-radius:15px; background: linear-gradient(#0a7e90,#0a7e8c);"> 
-                                <img src="./images/feedback/3.jpeg" alt="pic-1" width="100" class="img-fluid  rounded-circle mb-3 img-thumbnail shadow-sm">
-                                       
-                                       <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                                              live the blind texts. "</p>
-                                    <h5>Vaibhav Mishra </h5>
-			                    	 </div>
-                       </div>
-              </div>
-     
-    <!-- End the Code of  slideshow -->    
+<!-- End the Code of  slideshow -->    
+
   
   
    <!-- Start the Code of Left and right controls -->

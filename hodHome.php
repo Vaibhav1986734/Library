@@ -4,7 +4,7 @@
          if (session_status() == PHP_SESSION_NONE) 
                  session_start();
 
-                 $lrole="Faculty";
+                 $lrole="H.O.D.";
 
         include("shared/checkuserlogin.php");
         
@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="utf-8" />
-      <title> Library Faculty </title>
+      <title> Library HOD </title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">  
     <link href="css/all.min.css" rel="stylesheet">
@@ -45,16 +45,15 @@
             <div style="text-align:center; border-radius:3px;">
 
                     <h3 class="text-danger font-weight-bold" style="padding-top:20px; text-shadow: 1px 1px 1px black;">
-                        Welcome to GPL Library Faculty Dashboard
+                        Welcome to GPL  Library H.O.D. Dashboard
                     </h3>
 
                     <h5>  Here are some tips to help you get started</h5>
                     <hr>
 
-
 <!------------Start the code of card----------------->
 
-<div class="container-fluid">
+    <div class="container-fluid">
       <div class="row">
 
          <div class="col-md-3">
@@ -159,26 +158,6 @@
 <!------------ End the code of card ----------------->
 
 
- <!------------ start the code of grafh  ----------------->
-
-
-<div class="container">
-     <div class="row mt-4">
-
-           <div class="col-md-6">
-                 <canvas id="bar-chart" height="250"></canvas>
-           </div>
-
-           <div class="col-md-6 m-auto">
-                  <canvas id="doughnut-chart"></canvas>
-           </div>
-
-      </div>
-</div>
-               <!------------ End the code of grafh  ----------------->
-
-
-               
 <!------------- Start the code of table ------------------------------>
 
 <div class="container-fluid">
@@ -194,48 +173,60 @@
         </tr>
     <tr>
       <th scope="col">S.N.</th>
-      <th scope="col"> Related Branch Name</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Total Prise</th>
+      <th scope="col">Book Name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Publication </th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Cs/IT</td>
-      <td>5680</td>
-      <td>519500</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Civil</td>
-      <td>456</td>
-      <td>4370</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Mechanical</td>
-      <td>765</td>
-      <td>78500</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>P.M.T.</td>
-      <td>435</td>
-      <td>6750</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Library</td>
-      <td>2350</td>
-      <td>9850</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Chemical</td>
-      <td>4035</td>
-      <td>60750</td>
-    </tr>
+    
+  <?php
+  {
+  $rs=mysqli_query($con,"SELECT `facultid`, `fusername`, `fpassword`, `facultname`, `femail`, `fcontact`, `fbranchid`, `fdesignationid`,
+   `fqualificationid`, `photo` FROM `faculties` f ".
+  " INNER JOIN branches b on f.fbranchid=b.branchid ".
+  "WHERE fusername='$username'") or die("Error: ".mysqli_error($con));
+  if($row=mysqli_fetch_row($rs))
+      { 
+        $facultid=$row[1];
+        $facname=$row[2];
+        $fpassword=$row[3];
+        $desig=$row[4];
+        $branch=$row[5];
+        $photo=$row[6];
+        $fbranchid=$row[7];
+        $femail=$row[8];
+        $fcontact=$row[9];
+      }
+    }
+
+  $bno="";
+  $bname="";
+  $pcation="";
+       $rs="SELECT bno, bname, author, pcation, branchid FROM book WHERE  branchid ='$branchid'";
+         $query_run = mysqli_query ($con,$rs);
+          
+           if(mysqli_num_rows($query_run) > 0)
+           {
+            while($row=mysqli_fetch_array($query_run))
+            {
+               ?>
+<tr>
+      <th><?php echo $row['bno']; ?></th>
+      <th><?php echo $row['bname']; ?></th>
+      <th><?php echo $row['author']; ?></th>
+      <th><?php echo $row['pcation']; ?></th>
+</tr>
+                <?php 
+               
+            }
+           }
+           
+          
+         else
+            echo(" result not found ");
+    ?>
+   
   </tbody>
 </table>
         
@@ -312,50 +303,6 @@
     <script src="js/adminscripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://d19m59y37dris4.cloudfront.net/admin-premium/2-0/vendor/chart.js/Chart.min.js"></script>
-
-    <script>
- new Chart(document.getElementById("doughnut-chart"), {
-    type: 'doughnut',
-    data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-      datasets: [
-        {
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: true,
-        text: 'Predicted world population (millions) in 2050'
-      }
-    }
-});
-
-
-new Chart(document.getElementById("bar-chart"), {
-    type: 'bar',
-    data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-      datasets: [
-        {
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,4267,6734,5784,3833]
-        }
-      ]
-    },
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Predicted world population (millions) in 2050'
-      }
-    }
-});
-      </script>
 
 </body>
 </html>

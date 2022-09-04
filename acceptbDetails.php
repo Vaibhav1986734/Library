@@ -52,7 +52,7 @@
       <div class="container">
          <div class="row mt-2">
             <div class="col-6">
-               <h3>Accepted List</h3>
+               <h3>Received Book List</h3>
             </div>
             <div class="col-6 text-right">
             <button id="btnPrint" onclick='print();' class='btn btn-outline-success mt-3'>

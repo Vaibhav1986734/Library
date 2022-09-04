@@ -116,9 +116,6 @@
                       <i class="fab fa-youtube fa-2x text-white"></i>
           </a>&nbsp;&nbsp;
                   
-          <a  href="https://www.gplucknow.org/"  target="_blank">
-                      <i class="fab fa-google fa-2x text-white"></i>
-          </a>&nbsp;&nbsp;
                 
        </div>
 

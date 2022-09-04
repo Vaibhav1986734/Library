@@ -171,10 +171,9 @@
 
 
          
-         <div class="form-group">
-                 <textarea class="form-control" id="mess" name="mess" rows="5" placeholder=" Enter your message.."
-                        required="required"
-                       value="<?php $mess ?>">
+            <div class="form-group">
+                 <textarea class="form-control" id="mess" name="mess" rows="5" placeholder=" Enter your message...!"
+                        required="required"  value="<?php $mess ?>">
                  </textarea>
               </div>
       

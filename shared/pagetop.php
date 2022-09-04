@@ -156,13 +156,13 @@
        <div class="container-fluid">
 
   <!----- Start the code of Row ------------->
-          <div class="row mt-3">   
+          <div class="row mt-3 ">   
 
-          <div class="col-1">
-             <img src="images/logo.jpg" class="p-0 mt-0 img-responsive"/>
+          <div class="col-md-1">
+             <img src="images/logo.jpg" class="img-responsive"/>
           </div>
 
-          <div class="col-7">
+          <div class="col-md-7">
             <a class="navbar navbar-brand ml-5" style="text-shadow:2px 2px 10px #68cbf2;">
                  
                 G<span class="d-md-inline-block d-none">overnment</span> 
@@ -173,7 +173,7 @@
          </div>
 
 
-          <div class="col-4 d-none d-md-block">
+          <div class="col-lg-4 d-none d-md-block">
            <a href="https://swachhbharatmission.gov.in/sbmcms/index.htm"   target="_blank"> <img  src="images/logo-1.png" class="p-0 img-responsive"/></a>
           </div>
 
@@ -182,9 +182,9 @@
 
      <!------- Start the code of nav ------------->
    
-<div class="row">
+<div class="row ">
      <!------- Start the code of nav ------------->
-       <div class="col-12 p-0 m-0"  style="font-size: 16px; background-color:#0a7e8c;">
+       <div class="col-md-12 p-0 m-0"  style="font-size: 16px; background-color:#0a7e8c;">
         <nav class="navbar navbar-expand-md navbar-light" > 
 
            <button class="navbar-toggler" data-toggle="collapse" data-target="#Cnb">
@@ -251,23 +251,7 @@
 
                   </li>
 
-                  <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle text-white" href="#"  id="navbardrop" data-toggle="dropdown">
-                           Previous Paper
-                    </a>
-
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">2022-2023</a>
-                      <a class="dropdown-item" href="#">2021-2022</a>
-                      <a class="dropdown-item" href="#">2020-2021</a>
-                      <a class="dropdown-item" href="#">2020-2019</a>
-                      <a class="dropdown-item" href="#">2019-2018</a>
-                      <a class="dropdown-item" href="#">2018-2017</a>
-                      <a class="dropdown-item" href="#">2017-2016</a>
-                      <a class="dropdown-item" href="#">2016-2015</a>
-                    </div>
-
-                  </li>
+                
                 
                     <a class="nav-item nav-link text-white" href="gallery">Gallery</a>
                   
@@ -285,7 +269,7 @@
                   </form>
                 </div>
                 
-              <div class="nav-item">
+              <div class="nav-item ">
                  <a href="signin" class="btna btn-sm text-white" >
                      <i class="fa fa-sign-in-alt " aria-hidden="true"></i>&nbsp;SignIn
                  </a>            
